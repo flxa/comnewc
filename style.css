@@ -1,1 +1,101 @@
-@import url("../twentyfifteen/style.css");*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+@charset "UTF-8";
+/*
+ Theme Name:   CPANEW
+ Theme URI:    http://flxa.co
+ Description:  CPA Theme
+ Author:       Nick Fletcher
+ Author URI:   http://flxa.co
+ Template:     twentyfifteen
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  cpa
+*/
+@import url("../twentyfifteen/style.css");
+@import url("fonts/red-october/stylesheet.css");
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.site-header {
+  background: #f42400;
+  color: white;
+  padding-bottom: 2.4em; }
+  @media (min-width: 955px) {
+    .site-header {
+      margin-top: 0;
+      padding-top: 4em;
+      padding-bottom: 2.4em; } }
+  .site-header .site-branding .site-title {
+    font-family: "red_octoberregular", "Helvetica", sans-serif;
+    text-shadow: 3px 3px 0 darkred; }
+    .site-header .site-branding .site-title a {
+      color: #ffe800;
+      font-size: 1em;
+      line-height: 1;
+      padding-left: 3em;
+      text-align: left;
+      display: block;
+      letter-spacing: 1px;
+      text-rendering: optimizeLegibility; }
+      @media (min-width: 420px) {
+        .site-header .site-branding .site-title a {
+          padding-left: 2em; } }
+      @media (min-width: 600px) {
+        .site-header .site-branding .site-title a {
+          font-size: 1.5em; } }
+      @media (min-width: 955px) {
+        .site-header .site-branding .site-title a {
+          font-size: 1.2em;
+          padding-left: 0;
+          padding-top: 1.5em; } }
+    .site-header .site-branding .site-title:after {
+      content: '©';
+      display: block;
+      color: #ffe800;
+      position: absolute;
+      left: 0;
+      top: 0;
+      line-height: .9;
+      font-size: 3em; }
+      @media (min-width: 420px) {
+        .site-header .site-branding .site-title:after {
+          font-size: 2em; } }
+      @media (min-width: 600px) {
+        .site-header .site-branding .site-title:after {
+          font-size: 3em; } }
+      @media (min-width: 955px) {
+        .site-header .site-branding .site-title:after {
+          top: -.6em;
+          width: 100%;
+          text-align: center; } }
+  .site-header .site-branding .site-description {
+    display: block;
+    line-height: .4 !important;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: white;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    padding-left: 3.5em; }
+    @media (min-width: 420px) {
+      .site-header .site-branding .site-description {
+        padding-left: 2.4em; } }
+    @media (min-width: 600px) {
+      .site-header .site-branding .site-description {
+        padding-left: 3.5em; } }
+    @media (min-width: 740px) {
+      .site-header .site-branding .site-description {
+        padding-left: 4.1em; } }
+    @media (min-width: 955px) {
+      .site-header .site-branding .site-description {
+        line-height: 1 !important;
+        font-size: 1.1em;
+        padding-left: 0; } }
+  .site-header .site-branding .secondary-toggle {
+    border: 1px solid #ffe800;
+    -webkit-box-shadow: 3px 3px 0 darkred;
+    box-shadow: 3px 3px 0 darkred; }
+    .site-header .site-branding .secondary-toggle:before {
+      color: #ffe800; }

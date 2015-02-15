@@ -11,7 +11,107 @@
 */
 
 @import url("../twentyfifteen/style.css");
-
+@import url("fonts/red-october/stylesheet.css");
 *, *:before, *:after {
 	box-sizing: border-box;
+}
+
+$display-font: "red_octoberregular";
+$yellow: rgb(255, 232, 0);
+$red: rgb(244, 36, 0);
+$MQsmall: 420px;
+$MQmedium: 600px;
+$MQml: 740px;
+$MQlarge: 955px;
+
+.site-header {
+	background: $red;
+	color: white;
+	padding-bottom: 2.4em;
+	@media (min-width: $MQlarge) {
+		margin-top: 0;
+		padding-top: 4em;
+		padding-bottom: 2.4em;
+	}
+	.site-branding {
+		.site-title {
+			font-family: $display-font,"Helvetica",sans-serif;
+			text-shadow: 3px 3px 0 darkred;
+			a {
+				color: $yellow;
+				font-size: 1em;
+				line-height: 1;
+				padding-left: 3em;
+				text-align: left;
+				display: block;
+				letter-spacing: 1px;
+				text-rendering: optimizeLegibility;
+				@media (min-width: $MQsmall) {
+					padding-left: 2em;
+				}
+				@media (min-width: $MQmedium) {
+					font-size: 1.5em;
+				}
+				@media (min-width: $MQlarge) {
+					font-size: 1.2em;
+					padding-left: 0;
+					padding-top: 1.5em;
+				}
+			}
+			&:after {
+				content: '©';
+				display: block;
+				color: $yellow;
+				position: absolute;
+				left: 0;
+				top: 0;
+				line-height: .9;
+				font-size: 3em;
+				@media (min-width: $MQsmall) {
+					font-size: 2em;
+				}
+				@media (min-width: $MQmedium) {
+					font-size: 3em;
+				}
+				@media (min-width: $MQlarge) {
+					top: -.6em;
+					width: 100%;
+					text-align: center;
+				}
+			}
+		}
+		.site-description {
+			display: block;
+			line-height: .4 !important;
+			font-size: 1.2em;
+			text-transform: uppercase;
+			color: white;
+			opacity: 1;
+
+			position: absolute;
+			width: 100%;
+			padding-left: 3.5em;
+			@media (min-width: $MQsmall) {
+				padding-left: 2.4em;
+			}
+			@media (min-width: $MQmedium) {
+				padding-left: 3.5em;
+			}
+			@media (min-width: $MQml) {
+				padding-left: 4.1em;
+			}
+			@media (min-width: $MQlarge) {
+				line-height: 1 !important;
+				font-size: 1.1em;
+				padding-left: 0;
+			}
+		}
+		.secondary-toggle {
+			border: 1px solid $yellow;
+			box-shadow: 3px 3px 0 darkred;
+			&:before {
+				color: $yellow;
+			}
+		}
+	}
 }
